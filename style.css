@@ -1,0 +1,256 @@
+body {
+    background-color: #d6d0c4;
+    background-image: linear-gradient(#e8e2d6 1px, transparent 1px);
+    background-size: 100% 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #2e2b26;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.book-page {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fcf9f2;
+    padding: 50px 70px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px #b8a58b inset;
+    border-radius: 2px;
+    position: relative;
+}
+
+.book-page::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    right: 70px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #9b8e7a, transparent);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #c3b5a2;
+    padding-bottom: 30px;
+}
+
+.portrait-frame {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #e2d7cc;
+    box-shadow: 0 5px 15px rgba(66, 53, 38, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.portrait-frame:hover {
+    transform: scale(1.02);
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #2c4b3c;
+    letter-spacing: 1px;
+}
+
+.thin-italic {
+    font-weight: 400;
+    font-style: italic;
+    color: #6a6b4f;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #7b6e5d;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    color: #4a5c4e;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 15px 0 0;
+    border-top: 1px dotted #c3b5a2;
+}
+
+.chapter {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3d5e4b;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dbd0c2;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.dropcap:first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 600;
+    float: left;
+    line-height: 0.8;
+    margin-right: 10px;
+    color: #5f4e3c;
+    text-shadow: 1px 1px 0 #d9d0c0;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 25px 0 20px;
+}
+
+.book-card {
+    background-color: #f3efe8;
+    padding: 15px;
+    border-left: 4px solid #7d9d8c;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+    transition: all 0.2s;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.book-card:hover {
+    background-color: #ece5da;
+    border-left-color: #2c4b3c;
+}
+
+.book-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3f2e1e;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.book-year {
+    font-size: 13px;
+    color: #7d6e5c;
+    margin-bottom: 8px;
+    font-style: italic;
+    border-bottom: 1px dotted #d0c5b8;
+    padding-bottom: 5px;
+}
+
+.book-card p {
+    margin: 5px 0;
+    font-size: 13.5px;
+    color: #403c37;
+}
+
+.book-card strong {
+    font-weight: 500;
+    color: #2c4b3c;
+}
+
+.special-card {
+    margin-top: 15px;
+    border-left-color: #9b8e7a;
+    max-width: 100%;
+}
+
+.illustration-frame {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #e0d6c8;
+    background-color: #f6f2ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-illustration:hover {
+    transform: scale(1.05);
+}
+
+.illustration-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    height: 120px;
+}
+
+.row-illustration {
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e0d6c8;
+}
+
+.life-block {
+    margin-bottom: 30px;
+}
+
+.life-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c4b3c;
+    margin-bottom: 10px;
+    border-left: 3px solid #7d9d8c;
+    padding-left: 15px;
+}
+
+.story-card {
+    background-color: #f9f5ef;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    border: 1px solid #e8dfd2;
+}
+
+.story-card p {
+    margin: 10px 0;
+}
+
+.story-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f2e1e;
+    margin: 0 0 8px 0;
+}
+
+.fact-highlight {
+    background-color: #ece3d7;
+    border-left: 5px solid #b57c48;
+}
+
+.hobby-detailed
